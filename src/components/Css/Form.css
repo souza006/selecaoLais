@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+.login,
+.image {
+  min-height: 100vh;
+}
+
+label{
+  font-family: 'Roboto', sans-serif;
+
+}
+p{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.sub-titulo{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+.titulo-2{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 30px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.btn-dark{
+  box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+}
+.btn-primary{
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('https://therichpost.com/wp-content/uploads/2021/02/login-split.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.form-2{
+  box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.form-control{
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0.5px;
+}
+.titulo{
+  color: blue;
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+.conta{
+  padding: 10px;
+}

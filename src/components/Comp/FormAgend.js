@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/no-autofocus */
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,17 +5,6 @@ import "../Css/Form.css";
 import api from "../../services/api";
 
 function FormAgend() {
-  /* const [campanhas, setCampanhas] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const getCampanhas = async () => {
-    try {
-      const res = await api.get("campanhas");
-      setCampanhas(res.data.results);
-      setLoading(true);
-    } catch (err) {
-      alert(err.message);
-    }
-  }; */
 
   const [campanhas, setCamapanhas] = useState([]);
   useEffect(() => {
@@ -26,12 +13,12 @@ function FormAgend() {
     });
   }, []);
 
-  const [gruposAtendimento, setGrupos] = useState([]);
+  const [gruposAtendimentos, setGrupos] = useState([]);
   useEffect(() => {
-    api.get("grupos-atendimento").then(({ data }) => {
+    api.get("grupos-atendimentos").then(({ data }) => {
       setGrupos(data);
     });
-    console.log(gruposAtendimento);
+    console.log(gruposAtendimentos);
   });
 
   return (
@@ -39,7 +26,7 @@ function FormAgend() {
       <div className="container-fluid">
         <div className="row no-gutter">
           <div className="col-md-8">
-            <div className="login d-flex align-items-center py-5 ">
+            <div className="login d-flex align-items-center ">
               <div className="container">
                 <div className="row">
                   <p className="titulo-2">Agendar</p>
@@ -67,7 +54,7 @@ function FormAgend() {
                       <div className="form-group mb-3">
                         <label htmlFor="inputGrupo">Grupo Atendimento</label>
                         <select className="form-select" id="inputGrupo">
-                          {gruposAtendimento.map((grupos) => (
+                          {gruposAtendimentos.map((grupos) => (
                             <option value={grupos.id} key={grupos.id}>
                               {grupos.nome}
                             </option>

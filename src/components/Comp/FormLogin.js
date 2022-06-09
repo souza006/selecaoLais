@@ -8,15 +8,12 @@ import "../Css/Form.css";
 
 function FormLogin(){
 
-    const userRef = useRef = useRef();
-
 
 
   /* inputAlterado = (e) => {
     this.setState({ formlala: e.target.value });
   };
 */
-  render() {
     /* const { formlala } = this.state; */
     return (
       <div className="maincontainer">
@@ -84,7 +81,6 @@ function FormLogin(){
         </div>
       </div>
     );
-  }
 }
 
 export default FormLogin;

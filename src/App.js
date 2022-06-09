@@ -1,12 +1,10 @@
 import React from "react";
-import FormAgend from "./components/Comp/FormAgend";
-import NavbarComp from "./components/Comp/NavbarComp";
+import Rotas from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <NavbarComp />
-      <FormAgend />
+      <Rotas />
     </div>
   );
 }

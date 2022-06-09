@@ -5,17 +5,10 @@ import { AiOutlineUser } from "react-icons/ai";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Css/Form.css";
-/* import useForm from "react-hook-form"; */
 
 class FormRegister extends Component {
   state = {};
-
-  /* inputAlterado = (e) => {
-    this.setState({ formlala: e.target.value });
-  };
-*/
   render() {
-    /* const { formlala } = this.state; */
     return (
       <div className="maincontainer">
         <div className="container-fluid">

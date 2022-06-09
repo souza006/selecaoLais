@@ -1,13 +1,13 @@
 /* eslint-disable import/no-cycle */
 import React from "react";
-import FormLogin from "../Comp/FormLogin";
+import FormAgend from "../Comp/FormAgend";
 import NavbarComp from "../Comp/NavbarComp";
 
 function Agendar() {
   return (
     <div>
       <NavbarComp />
-      <FormLogin />
+      <FormAgend />
     </div>
   );
 }

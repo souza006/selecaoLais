@@ -8,8 +8,8 @@ function Rotas() {
   return (
     <Router>
       <Routes>
+        <Route path="/" exact element={<Login />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Login />} />
         <Route path="/meusAgendamentos" element={<MeusAgendamentos />} />
         <Route path="/agendar" element={<Agendar />} />
       </Routes>

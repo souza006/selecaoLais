@@ -7,11 +7,10 @@ import {
 import { Nav, NavDropdown, Navbar, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Css/navbar.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavbarComp() {
   return (
-    <Router>
       <Navbar id="navbar" expand="lg">
         <Container fluid className="col-md-10">
           <Navbar.Brand>
@@ -21,7 +20,7 @@ function NavbarComp() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              
               navbarScroll
             >
               <Nav.Link as={Link} to="/meusAgendamentos" id="navlink">
@@ -49,7 +48,6 @@ function NavbarComp() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
   );
 }
 
